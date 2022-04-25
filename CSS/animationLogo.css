@@ -1,3 +1,46 @@
 #LinkedInLogo{
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    animation-name:LinkedInAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes LinkedInAnimation {
+    0% {
+        left:0px;
+    }
+    50% {
+        border-radius: 0%;
+    }
+    100% {
+        left: 100px;
+    }
+}
+#pinkCircle{
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+    border-radius: 50%;
+    position:relative;
+    left: 50%;
+    animation-name: pinkCircleAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes pinkCircleAnimation {
+    0% {
+        left:0px;
+    }
+    25% {
+        border-radius: 0%
+    }
+    50% {
+        left: 250px;
+        background-color: purple;
+        transform:rotate(90deg);
+    }
 }
